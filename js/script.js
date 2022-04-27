@@ -1,3 +1,4 @@
+/* all variables0 */
 let elForm = document.querySelector(".form");
 let elSelect = document.querySelector(".thickness__select");
 let elSize = document.querySelector(".size");
@@ -8,12 +9,13 @@ let elSizeResult = document.querySelector(".sizeResult");
 let elAddResultList = document.querySelector(".addResult__list");
 let elAdditionsResultList = document.querySelector(".additionsResult__list");
 
-
+// ======================== required arrays====================
 let thickness = ["Yupqa", "O'rta", "Qalin"];
 let size = ["25sm", "30sm", "35sm"];
 let add = ["Pomidor", "Kurka go'shti", "Zaytun", "Tuzlangan bodring", "Qo'ziqorin", "Qazi"];
 let addition = ["Achchiq", "Sosiskali"];
 
+// display the thickness of the pizza
 for (let i = 0; i < thickness.length; i++){
   let newOption = document.createElement("option");
   newOption.textContent = thickness[i];
@@ -26,6 +28,7 @@ elForm.addEventListener("change", function(e){
   elThicknessResultSpan.textContent = elSelect.value;
 })
 
+// choosing the size of the pizza
 for (let i = 0; i < size.length; i++){
   let elInputRadio = document.createElement("input");
   let elLabelRadio = document.createElement("label");
@@ -45,6 +48,7 @@ elForm.addEventListener("change", function(evt){
   elSizeResult.appendChild(elSpan);
 })
 
+// necessary additions on the pizza
 for (let i = 0; i < add.length; i++) {
   let elInputCheck = document.createElement("input");
   let elLabelCheck = document.createElement("label");
@@ -62,6 +66,7 @@ for (let i = 0; i < add.length; i++) {
 }
 
 
+// additions
 for (let i = 0; i < addition.length; i++) {
   let elInpCheck = document.createElement("input");
   let elLabCheck = document.createElement("label");
