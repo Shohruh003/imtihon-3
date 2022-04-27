@@ -1,0 +1,7 @@
+body {
+  background-image: url("../img/pizza-img.png");
+  background-repeat: no-repeat;
+  background-size: 700px auto;
+  background-position: calc(50% + 600px);
+  background-color: rgb(248, 237, 224);
+}

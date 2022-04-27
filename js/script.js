@@ -48,11 +48,19 @@ elForm.addEventListener("change", function(evt){
 for (let i = 0; i < add.length; i++) {
   let elInputCheck = document.createElement("input");
   let elLabelCheck = document.createElement("label");
+  let elList = document.createElement("li");
   elInputCheck.type = "checkbox";
   elLabelCheck.textContent = add[i];
-  elAdd.appendChild(elInputCheck);
-  elAdd.appendChild(elLabelCheck);
+  elList.appendChild(elInputCheck);
+  elList.appendChild(elLabelCheck);
+  elAdd.appendChild(elList);
+  elInputCheck.style.width = "18px";
+  elInputCheck.style.height = "18px";
+  elInputCheck.style.marginRight = "2px";
+  elLabelCheck.style.marginRight = "18px";
+  elLabelCheck.style.fontSize = "18px";
 }
+
 
 for (let i = 0; i < addition.length; i++) {
   let elInpCheck = document.createElement("input");
@@ -61,5 +69,10 @@ for (let i = 0; i < addition.length; i++) {
   elLabCheck.textContent = addition[i];
   elAddition.appendChild(elInpCheck);
   elAddition.appendChild(elLabCheck);
+  elInpCheck.style.width = "18px";
+  elInpCheck.style.height = "18px";
+  elLabCheck.style.fontSize = "18px";
+  elInpCheck.style.marginRight = "10px";
+  elLabCheck.style.marginRight = "150px";
 }
 
